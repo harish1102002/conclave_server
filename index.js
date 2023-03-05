@@ -10,7 +10,7 @@ let col=null
 app.use(exp.json())
 app.use(cors())
 
-m.connect("mongodb+srv://Harish:harish7@cluster0.ffgjypz.mongodb.net/Kuruk").then((c)=>
+m.connect("mongodb+srv://harish:harish7@cluster0.ffgjypz.mongodb.net/Kuruk").then((c)=>
 col=c.db().collection("conclave")).then(()=>{
     col.find().forEach(e => post.push(e));});
 
