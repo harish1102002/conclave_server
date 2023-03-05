@@ -16,7 +16,7 @@ col=c.db().collection("conclave")).then(()=>{
 
 const io = new Server(http,{
     cors:{
-        origin:"https://conclavee.netlify.app"
+        origin:"https://conclavee.netlify.app/"
     },
 })
 
