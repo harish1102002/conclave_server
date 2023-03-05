@@ -12,7 +12,7 @@ app.use(cors())
 
 m.connect("mongodb+srv://harish:harish7@cluster0.ffgjypz.mongodb.net/Kuruk").then((c)=>
 col=c.db().collection("conclave")).then(()=>{
-    col.find().forEach(e => post.push(e))});
+    col.find().forEach(e => post.push(e));});
 
 const io = new Server(http,{
     cors:{
